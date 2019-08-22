@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const api = "";
+const api = "mongodb://yunusunver:yunus1234@ds211648.mlab.com:11648/task-getircom";
 
 const mongoDbConnectPromise = mongoose.connect(api,{useNewUrlParser:true});
 

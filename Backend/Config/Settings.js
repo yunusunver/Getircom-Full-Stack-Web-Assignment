@@ -1,1 +1,1 @@
-module.exports.mongoDbUrl = "";
+module.exports.mongoDbUrl = "mongodb://yunusunver:yunus1234@ds211648.mlab.com:11648/task-getircom";

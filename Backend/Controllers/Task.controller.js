@@ -9,15 +9,16 @@ module.exports.getAllTasks = (req,res) => {
     });
 
     getAll.catch((err)=>{
-        res.json({message: "Tasks not found",status:false})
-    })
+        res.json({message: "Tasks not found",status:false});
+    });
 };
 
 
 module.exports.postTask = (req,res) => {
+    console.log("Post")
     const { 
         title, 
-        description 
+        description
     } = req.body;
 
     const newTaskModel = new TaskModel({
