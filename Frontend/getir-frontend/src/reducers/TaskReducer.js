@@ -11,9 +11,9 @@ const TaskReducer = (state=initialState,action) => {
             ]
         case 'DELETE_TASK':
             return {...state};
-        case 'GET_TASK':
+        case 'GET_TASKS':
             state = {
-                allTasks:action.payload.allTasks
+                allTasks: action.payload.allTasks
             }
             break;
         default:

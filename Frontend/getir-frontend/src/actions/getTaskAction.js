@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const GET_TASKS = 'GET_TASK';
+const GET_TASKS = 'GET_TASKS';
 
 export const taskList = () => {
     return dispatch => {

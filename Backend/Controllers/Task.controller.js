@@ -31,11 +31,10 @@ module.exports.postTask = (req,res) => {
     });
 };
 
-module.exports.updateTask = (res,req) =>{
+module.exports.updateTask = (req,res) =>{
     const id = req.params.Id;
     const updated = {
-        title:req.body.title,
-        description:req.body.description
+        completeStatus:req.body.completeStatus
     };
 
     TaskModel.findOneAndUpdate({_id:id}, updated, (err,doc,result)=>{
